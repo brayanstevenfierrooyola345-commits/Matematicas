@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portafolio Matemático</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="portada">
+<h1>Portafolio Matemático</h1>
+<p>Aplicaciones desarrolladas con HTML, CSS y JavaScript</p>
+
+<div class="datos">
+<p><strong>Estudiante:</strong> Brayan Steven Fierro Oyola</p>
+<p><strong>Asignatura:</strong> Matemáticas</p>
+</div>
+</header>
+
+<nav>
+<a href="#intro">Introducción</a>
+<a href="#objetivos">Objetivos</a>
+<a href="#video">video</a>
+<a href="#fracciones">Fracciones</a>
+<a href="#aleatorias">Operaciones</a>
+</nav>
+
+<section id="intro" class="seccion">
+<h2>Introducción</h2>
+
+<p>
+Las matemáticas son fundamentales en la programación.
+Este portafolio reúne dos aplicaciones desarrolladas con HTML, CSS y JavaScript
+que permiten resolver operaciones matemáticas de manera interactiva.
+</p>
+</section>
+
+<section id="video" class="seccion">
+    <h2>Video Explicativo</h2>
+
+    <div class="video-container">
+        <video controls>
+            <source src="Presentacion_Ciudades_Contaminacion_Estadisticas.mp4" type="video/mp4">
+            Tu navegador no soporta la reproducción de videos.
+        </video>
+    </div>
+</section>
+
+<section id="objetivos" class="seccion">
+<h2>Objetivos</h2>
+
+<ul>
+<li>Aplicar operaciones con fracciones.</li>
+<li>Simplificar resultados usando el MCD.</li>
+<li>Generar ejercicios matemáticos aleatorios.</li>
+<li>Fortalecer la lógica mediante programación.</li>
+</ul>
+
+</section>
+
+<section id="fracciones" class="seccion">
+
+<h2>Ejercicio 1 - Calculadora de Fracciones</h2>
+
+<div class="contenedor">
+
+<div class="fraccion">
+<input type="number" id="n1" placeholder="Num">
+<span>/</span>
+<input type="number" id="d1" placeholder="Den">
+</div>
+
+<select id="operacionFrac">
+<option value="+">Sumar (+)</option>
+<option value="-">Restar (-)</option>
+<option value="*">Multiplicar (×)</option>
+<option value="/">Dividir (÷)</option>
+</select>
+
+<div class="fraccion">
+<input type="number" id="n2" placeholder="Num">
+<span>/</span>
+<input type="number" id="d2" placeholder="Den">
+</div>
+
+<button id="btnCalcular">Calcular</button>
+
+<div id="resultado" class="resultado"></div>
+
+</div>
+
+</section>
+
+<section id="aleatorias" class="seccion">
+
+<h2>Ejercicio 2 - Operaciones Aleatorias</h2>
+
+<div class="caja">
+
+<div id="operacion" class="operacion"></div>
+
+<div id="opciones" class="opciones"></div>
+
+<div id="mensaje"></div>
+
+</div>
+
+</section>
+
+<footer>
+
+<p>Portafolio Matemático - HTML, CSS y JavaScript</p>
+
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
