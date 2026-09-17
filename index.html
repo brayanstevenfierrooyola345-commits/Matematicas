@@ -6,35 +6,46 @@
 <title>Portafolio Matemático</title>
 <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-<header class="portada">
-<h1>Portafolio Matemático</h1>
-<p>Aplicaciones desarrolladas con HTML, CSS y JavaScript</p>
+<!-- =================== PORTADA =================== -->
 
-<div class="datos">
-<p><strong>Estudiante:</strong> Brayan Steven Fierro Oyola</p>
-<p><strong>Asignatura:</strong> Matemáticas</p>
-</div>
+<header class="portada">
+    <h1>Portafolio Matemático</h1>
+    <p>Aplicaciones desarrolladas con HTML, CSS y JavaScript</p>
+
+    <div class="datos">
+        <p><strong>Estudiante:</strong> Brayan Steven Fierro Oyola</p>
+        <p><strong>Asignatura:</strong> Matemáticas</p>
+    </div>
 </header>
 
+<!-- =================== MENÚ =================== -->
+
 <nav>
-<a href="#intro">Introducción</a>
-<a href="#objetivos">Objetivos</a>
-<a href="#video">video</a>
-<a href="#fracciones">Fracciones</a>
-<a href="#aleatorias">Operaciones</a>
+    <a href="#intro">Introducción</a>
+    <a href="#objetivos">Objetivos</a>
+    <a href="#video">Video</a>
+    <a href="#fracciones">Fracciones</a>
+    <a href="#aleatorias">Operaciones</a>
+    <a href="#geometria">Geometría</a>
 </nav>
 
-<section id="intro" class="seccion">
-<h2>Introducción</h2>
+<!-- =================== INTRODUCCIÓN =================== -->
 
-<p>
-Las matemáticas son fundamentales en la programación.
-Este portafolio reúne dos aplicaciones desarrolladas con HTML, CSS y JavaScript
-que permiten resolver operaciones matemáticas de manera interactiva.
-</p>
+<section id="intro" class="seccion">
+    <h2>Introducción</h2>
+
+    <p>
+        Las matemáticas son fundamentales en la programación.
+        Este portafolio reúne aplicaciones desarrolladas con HTML,
+        CSS y JavaScript que permiten resolver operaciones matemáticas
+        de forma interactiva y fortalecer la lógica mediante programación.
+    </p>
 </section>
+
+<!-- =================== VIDEO =================== -->
 
 <section id="video" class="seccion">
     <h2>Video Explicativo</h2>
@@ -47,71 +58,153 @@ que permiten resolver operaciones matemáticas de manera interactiva.
     </div>
 </section>
 
+<!-- =================== OBJETIVOS =================== -->
+
 <section id="objetivos" class="seccion">
-<h2>Objetivos</h2>
+    <h2>Objetivos</h2>
 
-<ul>
-<li>Aplicar operaciones con fracciones.</li>
-<li>Simplificar resultados usando el MCD.</li>
-<li>Generar ejercicios matemáticos aleatorios.</li>
-<li>Fortalecer la lógica mediante programación.</li>
-</ul>
-
+    <ul>
+        <li>Aplicar operaciones con fracciones.</li>
+        <li>Simplificar resultados usando el MCD.</li>
+        <li>Generar ejercicios matemáticos aleatorios.</li>
+        <li>Calcular áreas y perímetros de figuras geométricas.</li>
+        <li>Fortalecer la lógica mediante programación.</li>
+    </ul>
 </section>
+
+<!-- =================== CALCULADORA DE FRACCIONES =================== -->
 
 <section id="fracciones" class="seccion">
 
-<h2>Ejercicio 1 - Calculadora de Fracciones</h2>
+    <h2>Ejercicio 1 - Calculadora de Fracciones</h2>
 
-<div class="contenedor">
+    <div class="contenedor">
 
-<div class="fraccion">
-<input type="number" id="n1" placeholder="Num">
-<span>/</span>
-<input type="number" id="d1" placeholder="Den">
-</div>
+        <div class="fraccion">
+            <input type="number" id="n1" placeholder="Num">
+            <span>/</span>
+            <input type="number" id="d1" placeholder="Den">
+        </div>
 
-<select id="operacionFrac">
-<option value="+">Sumar (+)</option>
-<option value="-">Restar (-)</option>
-<option value="*">Multiplicar (×)</option>
-<option value="/">Dividir (÷)</option>
-</select>
+        <select id="operacionFrac">
+            <option value="+">Sumar (+)</option>
+            <option value="-">Restar (-)</option>
+            <option value="*">Multiplicar (×)</option>
+            <option value="/">Dividir (÷)</option>
+        </select>
 
-<div class="fraccion">
-<input type="number" id="n2" placeholder="Num">
-<span>/</span>
-<input type="number" id="d2" placeholder="Den">
-</div>
+        <div class="fraccion">
+            <input type="number" id="n2" placeholder="Num">
+            <span>/</span>
+            <input type="number" id="d2" placeholder="Den">
+        </div>
 
-<button id="btnCalcular">Calcular</button>
+        <button id="btnCalcular">Calcular</button>
 
-<div id="resultado" class="resultado"></div>
+        <div id="resultado" class="resultado"></div>
 
-</div>
-
+    </div>
 </section>
+
+<!-- =================== OPERACIONES ALEATORIAS =================== -->
 
 <section id="aleatorias" class="seccion">
 
-<h2>Ejercicio 2 - Operaciones Aleatorias</h2>
+    <h2>Ejercicio 2 - Operaciones Aleatorias</h2>
 
-<div class="caja">
+    <div class="caja">
 
-<div id="operacion" class="operacion"></div>
+        <div id="operacion" class="operacion"></div>
 
-<div id="opciones" class="opciones"></div>
+        <div id="opciones" class="opciones"></div>
 
-<div id="mensaje"></div>
+        <div id="mensaje"></div>
 
-</div>
+    </div>
 
 </section>
 
+<!-- =================== GEOMETRÍA INTERACTIVA =================== -->
+
+<section id="geometria" class="seccion">
+
+    <h2>Ejercicio 3 - Geometría Interactiva</h2>
+
+    <p>
+        Calcula el área y el perímetro de distintas figuras geométricas
+        ingresando sus medidas.
+    </p>
+
+    <div class="tarjeta-principal">
+
+        <!-- Panel izquierdo -->
+
+        <section class="panel-controles">
+
+            <div class="grupo-campo">
+                <label for="valorUno" class="etiqueta-campo">Base / Lado</label>
+                <input type="number" id="valorUno" class="campo-entrada" placeholder="Ej: 10">
+            </div>
+
+            <div class="grupo-campo">
+                <label for="valorDos" class="etiqueta-campo">Altura / Apotema</label>
+                <input type="number" id="valorDos" class="campo-entrada" placeholder="Ej: 35">
+            </div>
+
+            <div class="grupo-campo" id="grupoValorTres">
+                <label for="valorTres" class="etiqueta-campo">Lado adicional</label>
+                <input type="number" id="valorTres" class="campo-entrada" placeholder="Ej: 30">
+            </div>
+
+            <div class="grupo-campo">
+                <label for="selectorFigura" class="etiqueta-campo">Figura</label>
+
+                <select id="selectorFigura" class="campo-select">
+                    <option value="triangulo">Triángulo</option>
+                    <option value="rectangulo">Rectángulo</option>
+                    <option value="cuadrado">Cuadrado</option>
+                    <option value="pentagono">Pentágono</option>
+                    <option value="hexagono">Hexágono</option>
+                    <option value="octagono">Octágono</option>
+                </select>
+            </div>
+
+            <button id="botonCalcular" class="boton-calcular">
+                Calcular
+            </button>
+
+        </section>
+
+        <!-- Panel derecho -->
+
+        <section class="panel-resultado">
+
+            <div class="marco-dibujo">
+                <canvas id="lienzoFigura" width="320" height="320"></canvas>
+            </div>
+
+            <div class="caja-resultados" id="cajaResultados">
+
+                <p class="linea-resultado">
+                    Área: <span id="valorArea">--</span>
+                </p>
+
+                <p class="linea-resultado">
+                    Perímetro: <span id="valorPerimetro">--</span>
+                </p>
+
+            </div>
+
+        </section>
+
+    </div>
+
+</section>
+
+<!-- =================== PIE DE PÁGINA =================== -->
+
 <footer>
-
-<p>Portafolio Matemático - HTML, CSS y JavaScript</p>
-
+    <p>Portafolio Matemático - HTML, CSS y JavaScript</p>
 </footer>
 
 <script src="script.js"></script>
